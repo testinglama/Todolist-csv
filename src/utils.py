@@ -16,7 +16,9 @@ def banner():
     cmd_width = shutil.get_terminal_size().columns
     lines = art.splitlines()
     for line in lines:
-        print(colorama.Fore(line.center(cmd_width)))
+        print(line.center(cmd_width))
 
 
 
+def first_msg():
+    return("\n\n"+colorama.Style.BRIGHT+"WELCOME TO THE TODO LIST")
