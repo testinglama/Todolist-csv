@@ -19,12 +19,12 @@ while True:
     print("REMOVE TASK : (2)\n")
     print("EDIT TASK : (3)\n")
 
-    inp = int(input("WRITE YOUR CHOICE "))
+    inp = input("WRITE YOUR CHOICE ")
 
-    if inp == "" :
-        print("exiting the app...")
+    if inp == "" or str :
+        print("\nexiting the app...\n")
         time.sleep(2)
-        print("exited the app!")
+        print("\nexited the app!\n")
         break
 
 

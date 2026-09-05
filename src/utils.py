@@ -1,5 +1,7 @@
 import colorama
 import shutil
+import csv
+import os
 
 
 
@@ -18,7 +20,9 @@ def banner():
     for line in lines:
         print(line.center(cmd_width))
 
+file_path = os.path.isfile("data.csv")
 
-
-def first_msg():
-    return("\n\n"+colorama.Style.BRIGHT+"WELCOME TO THE TODO LIST")
+def new_task():
+    with open(data.csv, mode="a",newline="", encoding="utf8"):
+    ask = input("what is the task you want to add")
+    read = csv
