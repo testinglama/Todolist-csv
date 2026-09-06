@@ -2,6 +2,7 @@ import colorama
 import shutil
 import csv
 import os
+import time
 
 
 
@@ -21,10 +22,8 @@ def banner():
         print(line.center(cmd_width))
 
 
-def add_task(a):
-    with open("data.csv", mode='a', newline="") as file:
-        ask = csv.writer()
-        ask.writerow()
-        print(colorama.Fore.GREEN+"added the")
-
-add_task("make me a coffee")
+def loading_scr(x = 5):
+    tme = time.time()
+    while time.time() - tme < x:
+        for dot in range(4):
+            print( f"\rloading{'.' * dot:<3}", end="", flush=True)
