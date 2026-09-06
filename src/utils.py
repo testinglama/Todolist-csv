@@ -20,9 +20,11 @@ def banner():
     for line in lines:
         print(line.center(cmd_width))
 
-file_path = os.path.isfile("data.csv")
 
-def new_task():
-    with open(data.csv, mode="a",newline="", encoding="utf8"):
-    ask = input("what is the task you want to add")
-    read = csv
+def add_task(a):
+    with open("data.csv", mode='a', newline="") as file:
+        ask = csv.writer()
+        ask.writerow()
+        print(colorama.Fore.GREEN+"added the")
+
+add_task("make me a coffee")

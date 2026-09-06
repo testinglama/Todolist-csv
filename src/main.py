@@ -13,6 +13,12 @@ print(colorama.Fore.WHITE)
 print("\n")
 print(colorama.Fore.LIGHTMAGENTA_EX+colorama.Style.BRIGHT+"     HELLO USER WELCOME TO TODO-LIST  :  "+"\n\n")
 
+ask_task = input("write the task you want to add in todo list")
+
+ut.add_task(ask_task)
+
+
+
 while True:
     print("     OPTIONS ARE :    "+colorama.Fore.YELLOW)
     print("ADD TASK : (1)\n")
@@ -23,7 +29,7 @@ while True:
 
     if inp == "" or str :
         print("\nexiting the app...\n")
-        time.sleep(2)
+        time.sleep(1.5)
         print("\nexited the app!\n")
         break
 
