@@ -34,7 +34,7 @@ while True:
     if inp == "1":
         print(colorama.Style.DIM+" OPENING ADD TASK TERMINAL: ")
 
-        ut.loading_scr(2)
+        ut.loading_scr()
         tsk = input("\nenter your task\n")
         with open("data", mode="a", newline="",encoding="utf-8") as file:
             wrte = csv.writer(file)
